@@ -1,67 +1,58 @@
-<h1 align="center">
-  <img src="https://www.xila.dev/images/logo_dark.svg" alt="Xila Logo" style="height: 1em; vertical-align: middle;"> Xila
-</h1>
+# Xila — a Rust operating system for embedded experiences
 
-<p align="center">
-  <strong>A modern, memory-safe operating system for embedded systems.</strong><br>
-  Rewritten in <b>Rust</b>. Powered by <b>WebAssembly</b>.
-</p>
+**Build embedded applications with Rust and WebAssembly.** Xila is a modular,
+open-source embedded operating system that brings together Wasm apps, an LVGL
+graphical interface, task management, networking, and storage.
 
-<p align="center">
-  <a href="https://xila.dev">🌍 Website</a> •
-  <a href="https://documentation.xila.dev/demonstrations/wasm/en/">🎬 Demonstrations</a> •
-  <a href="https://www.xila.dev/guide/">📖 Guide</a> •
-  <a href="https://www.xila.dev/reference/">📚 Reference</a> •
-  <a href="mailto:contact@xila.dev">✉️ Contact</a>
-</p>
+[Website](https://www.xila.dev/) ·
+[Documentation](https://www.xila.dev/docs/) ·
+[Source code](https://github.com/xila-project/core) ·
+[Community](https://matrix.to/#/#xila:anneraud.fr)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-Rust-orange?style=flat-square&logo=rust" alt="Rust">
-  <img src="https://img.shields.io/badge/Runtime-WASM-624de3?style=flat-square&logo=webassembly" alt="WASM">
-  <a href="https://matrix.to/#/#xila:anneraud.fr" rel="noopener" target="_blank"><img src="https://matrix.to/img/matrix-badge.svg" alt="Chat on Matrix"></a>
-</p>
+## Explore Xila
 
----
+- **Run it locally:** follow the [native tutorial](https://www.xila.dev/tutorials/native)
+  to explore Xila on Linux with Wayland.
+- **Try a Wasm application:** follow the [browser tutorial](https://www.xila.dev/tutorials/browser)
+  to build Calculator and run it in browser-hosted Xila.
+- **Build an app:** use the [guest application guide](https://www.xila.dev/how-to/build-guest)
+  to get started with Xila's WebAssembly application model.
+- **Understand the system:** explore the [architecture and component map](https://www.xila.dev/explanation/architecture/components)
+  for tasks, filesystems, graphics, networking, and platform drivers.
 
-## ⚡ The Evolution
+## Why Xila?
 
-Xila has been completely reimagined. We have moved away from the legacy C++/Berry architecture to a modern stack built on **Rust** for maximum memory safety and **WebAssembly (WASM)** for a high-performance, sandboxed application ecosystem.
+- **Rust at the core:** reusable OS modules with explicit ownership and
+  resource management for embedded development.
+- **WebAssembly applications:** a Wasmi-based runtime for guest programs,
+  with Xila graphics bindings and a supported WASI subset.
+- **A shared graphical foundation:** LVGL widgets and a Shadcn theme for
+  applications and the desktop shell.
+- **A practical development path:** native and browser examples help you
+  explore shared code before validating it on your intended device.
 
-### Why the rewrite?
+Xila is under active development. Hardware support, guest APIs, and runtime
+capabilities vary by target. Read the [reference and current limits](https://www.xila.dev/reference/)
+before selecting a board or depending on an interface.
 
-- **Memory Safety:** Leveraging Rust to eliminate common embedded bugs at compile-time.
-- **WASM Portability:** Applications are language-agnostic. Develop in any language that targets WebAssembly.
-- **Security:** Sandboxed execution of software components.
-- **Performance:** Near-native execution speeds on microcontrollers.
+## Repositories
 
-## 🏗️ Architecture
+| Repository                                                   | What you will find                                                                                          |
+| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| [Core](https://github.com/xila-project/core)                 | The Rust embedded OS, device drivers, graphical shell, Wasm runtime, and example applications.              |
+| [Website](https://github.com/xila-project/website)           | The source for xila.dev, tutorials, task guides, architecture explanations, and API reference entry points. |
+| [Community profile](https://github.com/xila-project/.github) | This organization overview and links to the project and community.                                          |
 
-Xila acts as a lightweight kernel and abstraction layer for microcontrollers (primarily ESP32-S3), providing:
+## Get involved
 
-- **Core:** The Rust-based heartbeat managing hardware abstraction and task scheduling.
-- **WASM Runtime:** A portable execution engine for sandboxed binaries.
-- **Unified API:** Simplified interfaces for graphics, connectivity, and storage.
+Explore [Core issues](https://github.com/xila-project/core/issues), report a bug
+with reproduction steps, improve a guide, or help with
+[translations](https://translate.anneraud.fr/engage/xila-core/).
+Start with the [Core contributor guide](https://www.xila.dev/how-to/contribute-core)
+or the [documentation contribution guide](https://www.xila.dev/how-to/write-documentation).
 
-## 📂 Repositories
+Questions or ideas? Join the [Xila Matrix room](https://matrix.to/#/#xila:anneraud.fr)
+or contact [contact@xila.dev](mailto:contact@xila.dev).
 
-| Repository                                             | Description                                                     |
-| :----------------------------------------------------- | :-------------------------------------------------------------- |
-| [**Core**](https://github.com/Xila-Project/Core)       | The Rust-based core operating system and WASM execution engine. |
-| [**Website**](https://github.com/Xila-Project/Website) | The source for [xila.dev](https://xila.dev).                    |
-
-## 💬 Community & Support
-
-Join us to discuss development, suggest features, or get help:
-
-- **Matrix:** [#xila:anneraud.fr](https://matrix.to/#/#xila:anneraud.fr)
-- **Email:** [contact@xila.dev](mailto:contact@xila.dev)
-
-> [!IMPORTANT]  
-> Xila is currently in a **heavy alpha/rewrite phase**. The legacy C++ repositories have been archived to focus entirely on the new Rust/WASM architecture.
-
----
-
-<p align="center">
-  Built with 🦀 by <strong>Alix ANNERAUD</strong> and contributors. <br>
-  Xila is licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU General Public License v2.0</a>.
-</p>
+Xila is created by [Alix ANNERAUD](https://alix.anneraud.fr) and contributors,
+and released under the [GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
