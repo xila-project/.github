@@ -1,6 +1,9 @@
-<h1 align="center">
-  <img src="https://www.xila.dev/images/logo_dark.svg" alt="Xila Logo" style="height: 1em; vertical-align: middle;"> Xila
-</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xila-project/.github/main/profile/assets/xila-horizontal-white.svg">
+    <img src="https://raw.githubusercontent.com/xila-project/.github/main/profile/assets/xila-horizontal-ink.svg" alt="Xila" width="300">
+  </picture>
+</p>
 
 <p align="center">
   <strong>A modern, memory-safe operating system for embedded systems.</strong><br>
