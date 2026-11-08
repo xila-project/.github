@@ -1,21 +1,17 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/xila-project/.github/main/profile/assets/xila-horizontal-white.svg">
-    <img src="https://raw.githubusercontent.com/xila-project/.github/main/profile/assets/xila-horizontal-ink.svg" alt="Xila" width="300">
-  </picture>
-</p>
+<h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" alt="Xila Community — Discover Xila and contribute to the project." width="1280">
+</picture>
+</h1>
+
+[Documentation](https://www.xila.dev/docs/) ·
+[Try Xila](https://platforms.xila.dev/) ·
+[Community](https://matrix.to/#/#xila:anneraud.fr)
 
 <p align="center">
   <strong>A modern, memory-safe operating system for embedded systems.</strong><br>
   Rewritten in <b>Rust</b>. Powered by <b>WebAssembly</b>.
-</p>
-
-<p align="center">
-  <a href="https://xila.dev">🌍 Website</a> •
-  <a href="https://documentation.xila.dev/demonstrations/wasm/en/">🎬 Demonstrations</a> •
-  <a href="https://www.xila.dev/guide/">📖 Guide</a> •
-  <a href="https://www.xila.dev/reference/">📚 Reference</a> •
-  <a href="mailto:contact@xila.dev">✉️ Contact</a>
 </p>
 
 <p align="center">
@@ -62,9 +58,16 @@ Join us to discuss development, suggest features, or get help:
 > [!IMPORTANT]  
 > Xila is currently in a **heavy alpha/rewrite phase**. The legacy C++ repositories have been archived to focus entirely on the new Rust/WASM architecture.
 
+## Maintainers
+
+Built by **Alix ANNERAUD** and contributors.
+
+<!-- xila:footer:start -->
+
 ---
 
-<p align="center">
-  Built with 🦀 by <strong>Alix ANNERAUD</strong> and contributors. <br>
-  Xila is licensed under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU General Public License v2.0</a>.
-</p>
+Part of **[Xila](https://www.xila.dev/)** ·
+[Repositories](https://github.com/xila-project) ·
+[Community](https://matrix.to/#/#xila:anneraud.fr)
+
+<!-- xila:footer:end -->
