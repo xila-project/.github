@@ -8,7 +8,7 @@ Use one H1 containing the repository's light/dark SVG header. Give its image a d
 
 The graphic sources, repository titles, role summaries and generator belong to `xila-project/brand`. Import the generated SVGs into the consumer repository and record the exact source commit beside them. Both header variants have transparent backgrounds: black artwork for light themes and white artwork for dark themes. Do not bake a hosting platform's surface color into the artwork. Use a light fallback image and descriptive alt text. Rendering must not depend on installed fonts, scripts or image downloads during a consumer build.
 
-Use the shared footer at the end. Keep legal statements, license links and attribution repository-specific; the footer deliberately makes no project-wide licensing claim.
+Use the shared footer at the end, including the logo design credit to [Martin Legand](https://www.behance.net/martinlegand). Preserve that credit in deployed header asset notes; it credits the logo, not the generated layouts or the Montserrat font. Keep legal statements, license links and attribution repository-specific; the footer deliberately makes no project-wide licensing claim.
 
 This is a source template to copy and adapt. Adding it here does not automatically rewrite consumer READMEs.
 
